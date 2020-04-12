@@ -216,7 +216,7 @@ header .menu-search .search #search {
 .main .left_nav ul {
   list-style: none;
   height: 20%;
-  margin-top: 230px;
+  margin-top: 240px;
   margin-left: 15%;
 }
 
@@ -281,6 +281,10 @@ header .menu-search .search #search {
   font-weight: 300;
   letter-spacing: 2px;
   font-size: 0.8rem;
+}
+
+.main .product_list .product .info a {
+  color: #f3b541;
 }
 
 .main .next_page {
