@@ -170,9 +170,9 @@ header .menu-search .search #search {
   grid-row-gap: 400px;
   -ms-grid-columns: 12.5% 5% 1fr 1fr 1fr 5% 12.5%;
       grid-template-columns: 12.5% 5% 1fr 1fr 1fr 5% 12.5%;
-  -ms-grid-rows: (20%)[8];
-      grid-template-rows: repeat(8, 20%);
-      grid-template-areas: " . prev pic pic info info . " " . pic1 pic1 pic1 quote1 quote1 .  " " . quote2 quote2 pic2 pic2 pic2 .  " " . pic3 pic3 pic3 quote3 quote3 .  " " rating rating rating rating rating rating rating " " review1 review1 review1 review1 review1 review1 review1" " review2 review2 review2 review2 review2 review2 review2" " review3 review3 review3 review3 review3  review3 review3";
+  -ms-grid-rows: (20%)[4] 36.5%;
+      grid-template-rows: repeat(4, 20%) 36.5%;
+      grid-template-areas: " . prev pic pic info info . " " . pic1 pic1 pic1 quote1 quote1 .  " " . quote2 quote2 pic2 pic2 pic2 .  " " . pic3 pic3 pic3 quote3 quote3 .  " " rating rating rating rating rating rating rating ";
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -249,7 +249,7 @@ header .menu-search .search #search {
   position: absolute;
   top: 19%;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
@@ -299,7 +299,7 @@ header .menu-search .search #search {
   display: block;
   height: 40px;
   width: 40px;
-  border: 1px solid black;
+  border: 0px solid black;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   display: -webkit-box;
@@ -313,16 +313,16 @@ header .menu-search .search #search {
           align-items: center;
 }
 
-.main .info .color-selection .colors .selected1 {
-  border: 0px solid black;
+.main .info .color-selection .colors .selected1:hover {
+  border: 2px solid black;
 }
 
 .main .info .color-selection .colors .selected2 {
   border: 2px solid black;
 }
 
-.main .info .color-selection .colors .selected3 {
-  border: 0px solid black;
+.main .info .color-selection .colors .selected3:hover {
+  border: 2px solid black;
 }
 
 .main .info .color-selection .colors div {
@@ -377,7 +377,7 @@ header .menu-search .search #search {
   text-align: right;
   position: absolute;
   top: 47%;
-  left: 48%;
+  left: 52%;
 }
 
 .main .info .product-info-details ul li {
@@ -385,7 +385,7 @@ header .menu-search .search #search {
 }
 
 .main .info .product-info-details ul li h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
@@ -555,203 +555,170 @@ header .menu-search .search #search {
   padding-left: 10%;
 }
 
-.catalog {
-  grid-area: catalog;
-  height: 80%;
-  width: 90%;
-  overflow: hidden;
-  background-color: black;
-  position: relative;
+.main .user-rating-container {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-area: rating;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 12.5% 1fr 12.5%;
+      grid-template-columns: 12.5% 1fr 12.5%;
+  -ms-grid-rows: 20% (22%)[3];
+      grid-template-rows: 20% repeat(3, 22%);
+  grid-row-gap: 40px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      grid-template-areas: "title title title" ". rating1 ." ". rating2 ." ". rating3 .";
 }
 
-.catalog h2 {
+.main .user-rating-container .user-rating-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: title;
   width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 10%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  height: 100%;
+  background-color: #de8d82;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .user-rating-container .user-rating-title h3 {
   font-size: 2.8rem;
-  color: white;
+  font-weight: 600;
   letter-spacing: 10px;
 }
 
-.catalog .prev1 {
-  width: 30%;
-  height: 60%;
-  text-align: center;
-  position: absolute;
-  top: 55%;
-  left: 12%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-image: url("../pictures/catalog1.jpg");
-  z-index: 1;
+.main .user-rating-container #rating1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: rating1;
 }
 
-.catalog .prev1:hover {
-  z-index: 6;
+.main .user-rating-container #rating2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: rating2;
 }
 
-.catalog .prev2 {
-  width: 35%;
-  height: 65%;
-  text-align: center;
-  position: absolute;
-  top: 55%;
-  left: 32%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-image: url("../pictures/sample.jpeg");
-  z-index: 5;
+.main .user-rating-container #rating3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: rating3;
 }
 
-.catalog .prev3 {
-  width: 30%;
-  height: 60%;
-  text-align: center;
-  position: absolute;
-  top: 55%;
-  left: 52%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-image: url("../pictures/catalog3.jpeg");
-  z-index: 1;
-}
-
-.catalog .prev3:hover {
-  z-index: 6;
-}
-
-.news {
-  grid-area: news;
-  height: 80%;
-  width: 100%;
-  overflow: hidden;
-  background-color: white;
-  position: relative;
-}
-
-.news h2 {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 9%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  font-size: 2.8rem;
-  color: black;
-  letter-spacing: 10px;
-}
-
-.news .office {
-  width: 80%;
-  height: 75%;
-  text-align: center;
-  position: absolute;
-  top: 55%;
-  left: 10%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-image: url("../pictures/office.jpeg");
-  border: 5px solid #f3b541;
-  font-family: "Arapey", serif;
-}
-
-.news .office h3 {
-  margin-top: 96%;
-  color: white;
-  font-weight: 400;
-  font-size: 2.3rem;
-}
-
-.news .office p {
-  color: white;
-  padding-top: 5px;
-  font-size: 1.5rem;
-  color: #f3b541;
-}
-
-.offer {
-  grid-area: offer;
-  height: 80%;
+.main .user-rating-container .rating {
   width: 90%;
-  border: 1px solid black;
-  overflow: hidden;
+  height: 100%;
   background-color: #f3b541;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main .user-rating-container .rating .profile {
+  width: 25%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .user-rating-container .rating .profile img {
+  -webkit-transform: scale(0.07);
+          transform: scale(0.07);
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+
+.main .user-rating-container .rating .profile .user-name {
+  position: absolute;
+  padding-top: 55px;
+  color: white;
+}
+
+.main .user-rating-container .rating .profile .user-stars {
+  list-style: none;
+  position: absolute;
+  padding-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main .user-rating-container .massage {
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65%;
+  height: 100%;
   position: relative;
 }
 
-.offer #normal {
-  width: 100%;
-  text-align: center;
+.main .user-rating-container .massage svg {
+  -webkit-transform: scale(10);
+          transform: scale(10);
+  height: 8px;
   position: absolute;
-  top: 48%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  font-size: 2.8rem;
-  color: white;
-  letter-spacing: 10px;
+  left: 12px;
+  top: 50px;
 }
 
-.offer #reflect {
-  width: 100%;
-  padding-left: 20px;
-  text-align: center;
-  position: absolute;
-  top: 52%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  font-size: 2.8rem;
-  color: white;
-  opacity: 20%;
-  letter-spacing: 10px;
+.main .user-rating-container .massage p {
+  height: 45%;
+  border-bottom: 2px solid black;
+  margin-left: 55px;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
-.offer .offer1 {
-  width: 25%;
-  height: 95%;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-image: url("../pictures/offermore1.jpeg");
-  border: 1px solid black;
-}
-
-.offer .offer2 {
-  width: 25%;
-  height: 95%;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  right: 5%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-image: url("../pictures/offermore2.jpeg");
-  border: 1px solid black;
+.main .user-rating-container .date {
+  text-align: right;
+  padding-top: 20px;
 }
 
 footer .quote-box {
