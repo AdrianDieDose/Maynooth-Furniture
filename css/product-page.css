@@ -167,7 +167,7 @@ header .menu-search .search #search {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  grid-row-gap: 400px;
+  row-gap: 400px;
   -ms-grid-columns: 12.5% 5% 1fr 1fr 1fr 5% 12.5%;
       grid-template-columns: 12.5% 5% 1fr 1fr 1fr 5% 12.5%;
   -ms-grid-rows: (20%)[4] 36.5%;
@@ -184,8 +184,13 @@ header .menu-search .search #search {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: pic;
-  height: 95%;
-  width: 98%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  width: 99%;
+  height: 93%;
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -198,7 +203,7 @@ header .menu-search .search #search {
   -ms-grid-column: 2;
   grid-area: prev;
   width: 100%;
-  height: 100%;
+  height: 98%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,8 +228,13 @@ header .menu-search .search #search {
   -ms-grid-column: 5;
   -ms-grid-column-span: 2;
   grid-area: info;
-  height: 95%;
-  width: 98%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  width: 99%;
+  height: 98%;
   overflow: hidden;
   background-color: rgba(243, 181, 65, 0.36);
   position: relative;
@@ -235,7 +245,7 @@ header .menu-search .search #search {
   text-align: left;
   padding-left: 2%;
   position: absolute;
-  top: 9%;
+  top: 7%;
   color: black;
   font-size: 3.9rem;
   letter-spacing: 2px;
@@ -247,7 +257,7 @@ header .menu-search .search #search {
   text-align: left;
   padding-left: 22%;
   position: absolute;
-  top: 19%;
+  top: 17%;
   color: black;
   font-size: 1.3rem;
   font-weight: 600;
@@ -708,7 +718,7 @@ header .menu-search .search #search {
 }
 
 .main .user-rating-container .massage p {
-  height: 45%;
+  min-height: 45%;
   border-bottom: 2px solid black;
   margin-left: 55px;
   margin-top: 20px;
