@@ -53,7 +53,7 @@ header .logo-icons .logo {
 }
 
 header .logo-icons .logo svg {
-  width: 55%;
+  width: 200px;
   height: auto;
 }
 
@@ -179,6 +179,15 @@ header .menu-search .search #search {
   header .menu-search {
     width: 50%;
   }
+  header {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1020px) {
+  header .logo-icons .logo svg {
+    width: 150px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -188,11 +197,17 @@ header .menu-search .search #search {
   header .menu-search {
     width: 50%;
   }
+  header .logo-icons {
+    width: 43%;
+  }
+  header .logo-icons .logo svg {
+    width: 160px;
+  }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 572px) {
   header {
-    height: 160px;
+    height: 100px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -208,6 +223,10 @@ header .menu-search .search #search {
   }
   header .logo-icons .icons {
     left: 68%;
+  }
+  header .menu-search .search #search {
+    position: absolute;
+    top: 67px;
   }
 }
 
@@ -522,6 +541,107 @@ header .menu-search .search #search {
   border: 1px solid black;
 }
 
+/* Main media querry */
+@media (max-width: 1060px) {
+  body .wrapper {
+    height: 520vh;
+    overflow: hidden;
+  }
+  .main {
+    height: 400vh;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (20%)[5] 25%;
+        grid-template-rows: repeat(5, 20%) 25%;
+        grid-template-areas: "make" "inspire" "new" "catalog" "news" "offer";
+  }
+  .main .make {
+    height: 100%;
+    width: 100%;
+    border: 0px solid black;
+  }
+  .main .inspire {
+    height: 100%;
+    width: 100%;
+    border: 0px solid black;
+  }
+  .main .inspire h2 {
+    width: 50%;
+    right: 70%;
+    top: 45%;
+  }
+  .main .new {
+    height: 100%;
+    width: 100%;
+    border: 0px solid black;
+  }
+  .main .catalog {
+    height: 100%;
+    width: 100%;
+    border: 0px solid black;
+  }
+  .main .news {
+    height: 100%;
+    width: 100%;
+    border: 0px solid black;
+  }
+  .main .offer {
+    height: 100%;
+    width: 100%;
+    border: 0px solid black;
+  }
+  .main .offer .offer1 {
+    height: 55%;
+    width: 45%;
+    top: 60%;
+    left: 2%;
+  }
+  .main .offer .offer2 {
+    height: 55%;
+    width: 45%;
+    top: 60%;
+    right: 2%;
+  }
+  .main .offer #normal {
+    top: 12%;
+    font-size: 2.6rem;
+    letter-spacing: 5px;
+  }
+  .main .offer #reflect {
+    top: 15%;
+    font-size: 2.6rem;
+    letter-spacing: 5px;
+    padding-right: 10px;
+  }
+  .main .inspire h2 {
+    width: 50%;
+    right: 72%;
+    top: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main .inspire h2 {
+    top: 20%;
+  }
+  .main .make h1 {
+    font-size: 3rem;
+    letter-spacing: 30px;
+  }
+}
+
+@media (max-width: 572px) {
+  .main .inspire h2 {
+    width: 50%;
+    right: 70%;
+    top: 15%;
+  }
+  .main .make h1 {
+    font-size: 2.8rem;
+    letter-spacing: 10px;
+  }
+}
+
 /* Footer */
 footer .quote-box {
   display: -webkit-box;
@@ -643,7 +763,7 @@ footer .nav-box .nav .go-top svg {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 572px) {
   footer .nav-box .nav {
     width: 100%;
   }
