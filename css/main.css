@@ -9,6 +9,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+/* Base styling */
 body {
   background-color: #f6edb2;
   margin: 0;
@@ -19,6 +20,7 @@ body .wrapper {
   overflow: hidden;
 }
 
+/* Header */
 header {
   background-color: #f6edb2;
   width: 75%;
@@ -33,6 +35,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /* Header left side */
+  /* Header right side */
 }
 
 header .logo-icons {
@@ -50,6 +54,7 @@ header .logo-icons .logo {
 
 header .logo-icons .logo img {
   width: 70%;
+  height: auto;
 }
 
 header .logo-icons .icons {
@@ -146,6 +151,15 @@ header .menu-search .menu ul li {
   font-weight: 400;
 }
 
+header .menu-search .menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header .menu-search .menu ul li a:hover {
+  color: #842c68;
+}
+
 header .menu-search .menu ul #top-padding {
   padding-top: 3.5px;
 }
@@ -160,6 +174,7 @@ header .menu-search .search #search {
   margin-top: 5px;
 }
 
+/* Main */
 .main {
   width: 100%;
   margin: 0 auto;
@@ -175,6 +190,10 @@ header .menu-search .search #search {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Section 1 */
+  /* Section 2 */
+  /* Section 3 */
+  /* Section 4 */
 }
 
 .main .make {
@@ -466,6 +485,7 @@ header .menu-search .search #search {
   border: 1px solid black;
 }
 
+/* Footer */
 footer .quote-box {
   display: -webkit-box;
   display: -ms-flexbox;

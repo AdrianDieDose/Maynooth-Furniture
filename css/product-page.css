@@ -9,6 +9,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+/* Base styling */
 body {
   background-color: #f6edb2;
   margin: 0;
@@ -34,6 +35,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /* Header left side */
+  /* Header right side */
 }
 
 header .logo-icons {
@@ -147,6 +150,15 @@ header .menu-search .menu ul li {
   font-weight: 400;
 }
 
+header .menu-search .menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header .menu-search .menu ul li a:hover {
+  color: #842c68;
+}
+
 header .menu-search .menu ul #top-padding {
   padding-top: 3.5px;
 }
@@ -161,6 +173,7 @@ header .menu-search .search #search {
   margin-top: 5px;
 }
 
+/* Main */
 .main {
   width: 100%;
   height: 400vh;
@@ -177,6 +190,9 @@ header .menu-search .search #search {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Product */
+  /* Product markup */
+  /* User rating */
 }
 
 .main .pic {
@@ -584,6 +600,7 @@ header .menu-search .search #search {
       -ms-flex-align: center;
           align-items: center;
       grid-template-areas: "title title title" ". rating1 ." ". rating2 ." ". rating3 .";
+  /* Customer rating box */
 }
 
 .main .user-rating-container .user-rating-title {
@@ -731,6 +748,7 @@ header .menu-search .search #search {
   padding-top: 20px;
 }
 
+/* Footer */
 footer .quote-box {
   display: -webkit-box;
   display: -ms-flexbox;

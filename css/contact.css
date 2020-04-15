@@ -9,6 +9,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+/* Base styling */
 body {
   background-color: #f6edb2;
   margin: 0;
@@ -19,6 +20,7 @@ body .wrapper {
   overflow: hidden;
 }
 
+/* Header */
 header {
   background-color: #f6edb2;
   width: 75%;
@@ -33,6 +35,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /* Header left side */
+  /* Header right side */
 }
 
 header .logo-icons {
@@ -146,6 +150,15 @@ header .menu-search .menu ul li {
   font-weight: 400;
 }
 
+header .menu-search .menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header .menu-search .menu ul li a:hover {
+  color: #842c68;
+}
+
 header .menu-search .menu ul #top-padding {
   padding-top: 3.5px;
 }
@@ -160,6 +173,7 @@ header .menu-search .search #search {
   margin-top: 5px;
 }
 
+/* Main */
 .main {
   width: 100%;
   margin: 0 auto;
@@ -176,6 +190,8 @@ header .menu-search .search #search {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* First section */
+  /* Second section */
 }
 
 .main .visit {
@@ -211,7 +227,7 @@ header .menu-search .search #search {
   grid-area: info;
   -ms-grid-column-align: start;
       justify-self: start;
-  height: 90%;
+  height: 100%;
   width: 99%;
   border: 1px solid black;
   overflow: hidden;
@@ -219,15 +235,74 @@ header .menu-search .search #search {
   position: relative;
 }
 
-.main .contact-info h2 {
+.main .contact-info .store {
   width: 100%;
   position: absolute;
-  top: 33%;
+  top: 30%;
+  left: 44%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: black;
   font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.main .contact-info .store-location-title {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   color: white;
-  letter-spacing: 10px;
+  font-size: 3.9rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.main .contact-info .store-location-info {
+  width: 60%;
+  position: absolute;
+  top: 43%;
+  left: 6%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.main .contact-info .other {
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  right: 44%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: black;
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.main .contact-info .number-email {
+  width: 60%;
+  text-align: right;
+  position: absolute;
+  top: 85%;
+  right: 6%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
 
 .main .store-picture {
@@ -237,7 +312,7 @@ header .menu-search .search #search {
   grid-area: pic;
   -ms-grid-column-align: end;
       justify-self: end;
-  height: 90%;
+  height: 100%;
   width: 99%;
   border: 1px solid black;
   overflow: hidden;
@@ -247,6 +322,7 @@ header .menu-search .search #search {
   position: relative;
 }
 
+/* Footer */
 footer .quote-box {
   display: -webkit-box;
   display: -ms-flexbox;
