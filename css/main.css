@@ -296,7 +296,7 @@ header .menu-search .search #search {
 .main .inspire h2 {
   width: 100%;
   position: absolute;
-  top: 33%;
+  top: 38%;
   right: 40%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -544,7 +544,7 @@ header .menu-search .search #search {
 /* Main media querry */
 @media (max-width: 1060px) {
   body .wrapper {
-    height: 520vh;
+    height: 508vh;
     overflow: hidden;
   }
   .main {

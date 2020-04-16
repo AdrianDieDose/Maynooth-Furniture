@@ -53,7 +53,7 @@ header .logo-icons .logo {
 }
 
 header .logo-icons .logo svg {
-  width: 55%;
+  width: 200px;
   height: auto;
 }
 
@@ -413,9 +413,10 @@ footer .quote-box .quote {
 
 footer .quote-box .quote h4 {
   font-size: 2.5rem;
+  text-align: center;
 }
 
-footer .quote-box .quote p {
+footer .quote-box p {
   padding-top: 20px;
   font-size: 1.5rem;
 }
@@ -455,18 +456,18 @@ footer .nav-box .nav {
 
 footer .nav-box .nav ul {
   list-style: none;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   color: white;
-}
-
-footer .nav-box .nav ul li {
-  padding-right: 40px;
 }
 
 footer .nav-box .nav .go-top {
