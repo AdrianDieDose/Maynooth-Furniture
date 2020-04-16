@@ -436,6 +436,7 @@ header .menu-search .search #search {
   }
   .main .contact-info .store {
     font-size: 4.5rem;
+    padding-left: 100px;
   }
   .main .contact-info .store-location-title {
     font-size: 5.9rem;
@@ -470,6 +471,7 @@ header .menu-search .search #search {
   }
   .main .contact-info .store {
     font-size: 3.5rem;
+    padding-left: 45px;
   }
   .main .contact-info .store-location-title {
     font-size: 4.9rem;

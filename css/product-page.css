@@ -808,7 +808,7 @@ header .menu-search .search #search {
 /* Main media querry */
 @media (max-width: 1060px) {
   body .wrapper {
-    height: 503vh;
+    height: 623vh;
     overflow: hidden;
   }
   .main {
@@ -868,7 +868,7 @@ header .menu-search .search #search {
 
 @media (max-width: 768px) {
   body .wrapper {
-    height: 717vh;
+    height: 890vh;
     overflow: hidden;
   }
   .main {
@@ -920,7 +920,7 @@ header .menu-search .search #search {
 
 @media (max-width: 572px) {
   body .wrapper {
-    height: 562vh;
+    height: 698.5vh;
     overflow: hidden;
   }
   .main {
